@@ -1,0 +1,584 @@
+{
+	"info": {
+		"_postman_id": "f06ce2e0-2809-4c89-bb9a-90ef08a21e76",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22116142"
+	},
+	"item": [
+		{
+			"name": "TC1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n  \"id\": {{$randomInt}},\r\n  \"username\": \"{{$randomUserName}}\",\r\n  \"firstName\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$RandomLastName}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"password\": \"{{$randomPassword}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"userStatus\": {{$randomInt}}\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/createWithArray",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n  \"id\": {{$randomInt}},\r\n  \"username\": \"{{$randomUserName}}\",\r\n  \"firstName\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$RandomLastName}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"password\": \" \",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"userStatus\": {{$randomInt}}\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/createWithArray",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n  \"id\": {{$randomInt}},\r\n  \"username\": \" \",\r\n  \"firstName\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$RandomLastName}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"password\": \"{{$randomPassword}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"userStatus\": {{$randomInt}}\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/createWithArray",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n  \"id\": 2234,\r\n  \"username\": \"mateosky00x\",\r\n  \"firstName\": \"Mateo\",\r\n  \"lastName\": \"Castillo\",\r\n  \"email\": \"mateocastillo64@gmail.com\",\r\n  \"password\": \"1234567890\",\r\n  \"phone\": \"3223615936\",\r\n  \"userStatus\": 0\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PetStore}}/user/createWithList",
+					"host": [
+						"{{PetStore}}"
+					],
+					"path": [
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n  \"id\": {{$randomInt}},\r\n  \"username\": \"{{$randomUserName}}\",\r\n  \"firstName\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$RandomLastName}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"password\": \" \",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"userStatus\": {{$randomInt}}\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/createWithList",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n  \"id\": {{$randomInt}},\r\n  \"username\": \" \",\r\n  \"firstName\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$RandomLastName}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"password\": \"{{$randomPassword}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"userStatus\": {{$randomInt}}\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/createWithArray",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/mateosky00x",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"mateosky00x"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/mateo",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"mateo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC9",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2234,\r\n  \"username\": \"mateosky00x\",\r\n  \"firstName\": \"Mateo\",\r\n  \"lastName\": \"Castle\",\r\n  \"email\": \"mateocastillo64@gmail.com\",\r\n  \"password\": \"1234567890\",\r\n  \"phone\": \"3223615936\",\r\n  \"userStatus\": 0\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/mateosky00x",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"mateosky00x"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2234,\r\n  \"username\": \"pepito22\",\r\n  \"firstName\": \"pepito\",\r\n  \"lastName\": \"perez\",\r\n  \"email\": \"mateocastillo64@gmail.com\",\r\n  \"password\": \"1234567890\",\r\n  \"phone\": \"3223615936\",\r\n  \"userStatus\": 0\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/pepito22",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"pepito22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC11",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2234,\r\n  \"username\": \"pepito22\",\r\n  \"firstName\": \"pepito\",\r\n  \"lastName\": \"perez\",\r\n  \"email\": \"mateocastillo64@gmail.com\",\r\n  \"password\": \" \",\r\n  \"phone\": \"3223615936\",\r\n  \"userStatus\": 0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/mateosky00x",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"mateosky00x"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/durazno26",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"durazno26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/mateocastle",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"mateocastle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC14",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "mateosky00x",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234567890",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC15",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/login?username=mateosky00x&password=12345678",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "mateosky00x"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC16",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/login?username=ernestoperez1&password=4465465",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "ernestoperez1"
+						},
+						{
+							"key": "password",
+							"value": "4465465"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC17",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/login?username=mateosky00x&password=1234567890",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "mateosky00x"
+						},
+						{
+							"key": "password",
+							"value": "1234567890"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC18",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"username\": \"{{$randomUserName}}\",\r\n  \"firstName\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$RandomLastName}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"password\": \"{{$randomPassword}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"userStatus\": {{$randomInt}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC19",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"username\": \"{{$randomUserName}}\",\r\n  \"firstName\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$RandomLastName}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"password\": \"{{$randomPassword}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"userStatus\": {{$randomInt}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "PetStore",
+			"value": "https://petstore.swagger.io/v2"
+		}
+	]
+}
